@@ -16,7 +16,7 @@ export const Question = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple"
+          "https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=multiple"
         );
         setQuestions(res.data.results);
       } catch (err) {
